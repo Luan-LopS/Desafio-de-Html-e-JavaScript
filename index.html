@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Desafio Hmtl e javaScript</title>
 </head>
 <body>
     
-    <h1>Desafio de validação de compo com javaScript</h1>
+    <div class="container">
+        <h1>Desafio de validação de compo com javaScript</h1>
     <p>
         1 Crie um formulário HTML que possua dois campos numéricos:
         campo A
@@ -25,14 +27,16 @@
     </p>
 
 
-    <form action="">
-        <input type="number" name="" id="" placeholder="insira um numero">
+    <form id="formValidar">
+        <input type="number" name="" id="input1" placeholder="insira um numero">
         <p class="apenasNumeros"></p>
-        <input type="number" name="" id="" placeholder="insira um numero maior">
+        <input type="number" name="" id="input2" placeholder="insira um numero maior">
         <p class="numeroMaior"></p>
         <button type="submit">Enviar</button>
     </form>
+    </div>
+    
 
-
+    <script src="./script.js"></script>
 </body>
 </html>
