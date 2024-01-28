@@ -5,11 +5,32 @@
 }
 
 body{
-    background-color: rgba(0, 120, 33, 1);
+    background-color: rgba(5, 7, 34, 0.94);
 }
 
-.container{
-    width: 800px;
-    height: 600px;
-    background-color: red;
+.container {
+    margin: 80px auto;
+    max-width: 600px;
+    width: 100%;
+    background-color: rgba(121, 136, 251, 1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+form input, button{
+    width:100%;
+    margin-top: 15px;
+    padding:8px;
+}
+
+
+form button{
+    background-color: rgba(0, 102, 33, 1);
+    font-size: x-large;
+    color:#fff;
+    cursor:pointer;
+}
+
+.numeroMaior{
+    display: none;
 }

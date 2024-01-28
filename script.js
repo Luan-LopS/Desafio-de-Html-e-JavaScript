@@ -1,12 +1,25 @@
-const input1 = document.getElementById('input1').value
-const input2 = document.getElementById('input2').value
+const input1 = parseInt(document.getElementById('input1'))
+const input2 = parseInt(document.getElementById('input2'))
 const form = document.getElementById('formValidar')
 
-form.addEventListener('click', function(){
-    
+form.addEventListener('submit', function(e){
+    e.preventDefault()
 })
 
 
-function validacaoinput(){
+input2.addEventListener('keyup', function(e){
+    console.log(e.target.value)
+    let inputMenor = input1.value
+    let inputMaior = input2.value
 
-}
+    let erro = document.querySelector('.numeroMaior')
+
+    if(inputMaior > inputMenor){
+        console.log('certo')
+        erro.classList.add('numeroMaior')
+    }else{
+        console.log('errados')
+
+    }
+
+})
