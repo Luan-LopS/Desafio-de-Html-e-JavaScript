@@ -33,7 +33,16 @@ form button{
 
 .numeroMaior{
     display: block;
+    text-align: center;
     padding: 8px;
     background-color: red;
+    margin-top: 8px;
+}
+
+.numeroMenor{
+    display: block;
+    text-align: center;
+    padding: 8px;
+    background-color: green;
     margin-top: 8px;
 }
