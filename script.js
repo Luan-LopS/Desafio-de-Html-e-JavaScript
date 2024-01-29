@@ -17,15 +17,11 @@ input2.addEventListener('keyup',function(e){
     let p = document.querySelectorAll('p')[1]
     p.innerHTML = `Número B tem que ser maior que o A`
 
-    if(valorInput1 < valorInput2){
-        console.log('2 é maior')
-        p.classList.remove('numeroMaior')
-        p.innerHTML = ''
 
-    } else{
-        console.log('1 é maior')
-        p.classList.add('numeroMaior')
-
+    if(inputMaior > inputMenor){
+        console.log('certo')
+        erro.classList.add('numeroMaior')
+    }else{
+        console.log('errados')
     }
-
 })
