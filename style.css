@@ -32,5 +32,8 @@ form button{
 }
 
 .numeroMaior{
-    display: none;
+    display: block;
+    padding: 8px;
+    background-color: red;
+    margin-top: 8px;
 }
