@@ -26,4 +26,5 @@ input2.addEventListener('keyup',function(e){
     } else{
         console.log('1 é maior')
         p.classList.add('numeroMaior')
+    }
 })
