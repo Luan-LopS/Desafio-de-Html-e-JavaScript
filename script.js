@@ -24,26 +24,29 @@ input2.addEventListener('keyup',function(e){
     if(!(valorInput1 >= 0)){
         p2.innerHTML = `Apenas números`
         p2.classList.add('numeroMaior')
-        button.disabled = true
         button.classList.add('buttonInvalido')
-        console.log('ooooooooo')
-        
+        p2.classList.remove('numeroMaior')
+
+
         // verifica sem o input2 é maior que o 1
     } else if(valorInput1 < valorInput2){
         p2.classList.add('numeroMenor')
-        
         button.disabled = false
         button.classList.remove('buttonInvalido')
         p2.innerHTML = ''
         p2.innerHTML = msgPositiva
         p2.classList.remove('numeroMaior')
-    } else{
+        
+    } else  if(!(valorInput2 >= 0)){
+        p2.innerHTML = `Apenas números`
+        p2.classList.add('numeroMaior')
+        button.classList.add('buttonInvalido')
 
+    } else{
         p2.classList.add('numeroMaior')
         p2.classList.remove('numeroMenor')
         button.classList.add('buttonInvalido')
         p2.innerHTML =  msgNegativa
-        button.disabled = true
 
     }   
 })
