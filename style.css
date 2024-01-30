@@ -6,15 +6,25 @@
 
 body{
     background-color: rgba(5, 7, 34, 0.94);
+    color:#fff;
 }
 
 .container {
     margin: 80px auto;
     max-width: 600px;
     width: 100%;
+    min-height: 300px;
     background-color: rgba(121, 136, 251, 1);
     border-radius: 10px;
     padding: 20px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.validadoSucesso{
+    background-color: green;
 }
 
 form input, button{
@@ -27,8 +37,13 @@ form input, button{
 form button{
     background-color: rgba(0, 102, 33, 1);
     font-size: x-large;
-    color:#fff;
     cursor:pointer;
+    color:#fff;
+}
+
+.buttonInvalido{
+    background-color: rgb(69, 100, 38);
+    text-decoration: line-through
 }
 
 .numeroMaior{
