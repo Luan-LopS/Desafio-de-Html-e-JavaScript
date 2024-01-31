@@ -20,45 +20,37 @@ input2.addEventListener('keyup',function(e){
     let msgNegativa = `Input B tem que ser maior que o A`
     let msgPositiva = `Pode Enviar `
 
-     // verifica se são apenas numeros
-    if(!(valorInput1 >= 0)){
-        p2.innerHTML = `Apenas números`
-        p2.classList.add('numeroMaior')
-        button.classList.add('buttonInvalido')
-        p2.classList.remove('numeroMaior')
-
-
-        // verifica sem o input2 é maior que o 1
-    } else if(valorInput1 < valorInput2){
+    // verifica se o input2 é maior que o 1
+    if(valorInput1 < valorInput2){
         p2.classList.add('numeroMenor')
         button.disabled = false
         button.classList.remove('buttonInvalido')
-        p2.innerHTML = ''
         p2.innerHTML = msgPositiva
-        p2.classList.remove('numeroMaior')
-        
+         
+    // verifica se o input2 se é diferente de (verifica se o input2 é igual a 0 ou maior)
     } else  if(!(valorInput2 >= 0)){
         p2.innerHTML = `Apenas números`
         p2.classList.add('numeroMaior')
+        p2.classList.remove('numeroMenor')
         button.classList.add('buttonInvalido')
 
+    // aqui se nenhum da opção é verdadeira
     } else{
         p2.classList.add('numeroMaior')
         p2.classList.remove('numeroMenor')
         button.classList.add('buttonInvalido')
         p2.innerHTML =  msgNegativa
-
     }   
 })
 
-
+// aqui envia o formulario e altera com de fundo do container com messagem de sucesso.
 form.addEventListener('submit',function(e){
-    console.log(e)
     e.preventDefault()
     form.style.display = 'none'
     p1.innerHTML  = `ENVIADO COM SUCESSO`
     p1.style.textAlign = 'center'
     p1.style.paddingTop = '64px'
-    p1.style.fontSizeAdjust = '25px'
+    p1.style.fontSizeAdjust = '30px'
     container.style.background = 'green'
+    input2.removeEventListener('keyup',handleKeyup)
 })

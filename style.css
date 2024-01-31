@@ -42,7 +42,6 @@ form button{
 }
 
 .buttonInvalido{
-    background-color: rgb(69, 100, 38);
     text-decoration: line-through
 }
 
