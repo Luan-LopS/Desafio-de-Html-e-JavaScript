@@ -1,4 +1,4 @@
-## Na atividade prática deste módulo, você irá praticar todos os conceitos aprendidos. Se tiver dúvidas, retome o passo a passo nas aulas.
+## Na atividade prática deste módulo, utilizaremos todos os conceitos aprendidos.
 
 1. Crie um formulário HTML que possua dois campos numéricos:
 campo A
